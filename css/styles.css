@@ -1,0 +1,18 @@
+/* header */
+.header-bar{
+    display: flex;
+    /* change padding because my screen width is 1496px */
+    padding-right: 300px;
+    padding-left: 300px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: aqua;
+    /* width: 100%; */
+}
+.location{
+    display: flex;
+    align-items: center;
+}
+.location svg{
+    margin-right: 8px;
+}
