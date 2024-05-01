@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product View</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/aea148f8f4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="fixed top-0 bottom-0 left-0  right-0">
+        <div class="bg-black w-full h-full opacity-70"></div>
+        <div  class="overflow flex absolute top-16 right-1/2 translate-x-1/2 w-3/4 h-3/4   bg-black flex items-center  z-10 justify-center">
+            <div class="flex p-2 bg-white rounded z-20 relative h-full">
+                <div class="h-full w-20 basis-1/12 flex flex-col items-center justify-center cursor-pointer" >
+                    <i class="fa-solid fa-chevron-up text-2xl my-7"></i>
+                    <img class="hover:border-2 hover:border-green-500 border-2 border-slate-50" src="./imgs/Product Image.png" alt="">
+                    <img class="hover:border-2 hover:border-green-500 border-2 border-slate-50"  src="./imgs/Product Image (1).png" alt="">
+                    <img class="hover:border-2 hover:border-green-500 border-2 border-slate-50" src="./imgs/Product Image (2).png" alt="">
+                    <img class="hover:border-2 hover:border-green-500 border-2 border-slate-50" src="./imgs/Product Image (3).png" alt="">
+                    <i class="fa-solid fa-chevron-down text-2xl my-7"></i>
+                </div>
+                <div class="basis-5/12 flex items-center">
+                    <img src="./imgs/Image.png" alt="">
+                </div>
+                <div class="basis-6/12 p-5">
+                    <div class="border-b border-slate-300">
+                        <div>
+                            <div class="flex items-center">
+                                <p class="text-3xl font-semibold ">Chinese Cabbage</p>
+                                <p style="color: #00b208; background-color: #D2F0D4;" class="text-sm p-1 rounded mx-3">  In Stock</p>
+                            </div>
+                            <div class="flex items-center my-2">
+                                <i style="color: #FFA432;" class="fa-solid fa-star text-xs"></i>
+                                <i style="color: #FFA432;" class="fa-solid fa-star text-xs"></i>
+                                <i style="color: #FFA432;" class="fa-solid fa-star text-xs"></i>
+                                <i style="color: #FFA432;" class="fa-solid fa-star text-xs"></i>
+                                <i style="color: #FFA432;" class="fa-solid fa-star text-xs"></i> 
+                                <p class="text-slate-600 text-sm mx-2"> 4 Review</p> 
+                                <p>•</p>
+                                <p class="text-black font-medium ml-2 text-sm">SKU:</p>
+                                <p class="text-slate-600 text-sm">2,51,594</p>
+                            </div>
+                            <div class="flex items-center my-5">
+                                <p class="text-slate-300 text-xl line-through font-light mx-2">$48.00</p>
+                                <p style="color: #2C742F;" class="text-xl">$17.28</p>
+                                <p class="mx-4 text-red-500 py-1 px-2 bg-red-200 text-sm font-light rounded-full">64% Off</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-b border-slate-300">
+                        <div class="flex justify-between my-5">
+                            <div class="flex items-center">
+                                <p>Brand:</p>
+                                <img class="mx-2" src="./imgs/Group 19.png" alt="">
+                            </div>
+                            <div class="flex items-center">
+                                <p class="mr-2">Share item:</p>
+                                <i style="background-color: #00b208;" class="w-8 h-8 fa-brands fa-facebook-f text-white rounded-full text-center leading-7 cursor-pointer"></i>
+                                <i class="w-8 h-8 fa-brands fa-twitter text-center leading-7 cursor-pointer"></i>
+                                <i class="w-8 h-8 fa-brands fa-pinterest-p text-center leading-7 cursor-pointer"></i>
+                                <i class="w-8 h-8 fa-brands fa-instagram text-center leading-7 cursor-pointer"></i>
+                            </div>
+                        </div>
+                        <div class="text-slate-600 text-sm mb-5">
+                            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla nibh diam, blandit vel consequat nec, ultrices et ipsum. Nulla varius magna a consequat pulvinar. 
+                        </div>
+                    </div>
+                    <div class="border-b border-slate-300 ">
+                        <div class="flex justify-between items-center my-4">
+                            <div class="flex items-center justify-center p-2 border-2 border-slate-200 rounded-full">
+                                <i class="fa-solid fa-minus bg-slate-400 w-7 h-7 rounded-full text-center leading-7 mr-4 cursor-pointer"></i>
+                                <input class="w-6" type="number" value="1">
+                                <i class="fa-solid fa-plus bg-slate-400 w-7 h-7 rounded-full text-center leading-7 cursor-pointer"></i>
+                            </div>
+                            <div style="background-color: #00b208;" class="flex text-white p-2 w-72 rounded-full justify-center items-center cursor-pointer">
+                                <p class="mx-3 font-medium ">Add to Cart</p>
+                                <div >
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                                      </svg>
+                                </div>
+                            </div>
+                            <div style="color: #2C742F; background-color: #D2F0D4;" class="w-10 h-10 text-center leading-10 rounded-full cursor-pointer">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-slate-600 text-sm pt-3">
+                        <span class="font-semibold text-black ">Category:</span><span>Vegetables</span>
+                        <p class="my-2"></p>
+                        <span class="font-semibold text-black ">Tag:</span> <span>Vegetables Healthy</span> <span class="underline text-black">Chinese</span> <span>Cabbage Green Cabbage</span>
+                    </div>
+                </div>
+                <i class="fa-solid fa-xmark  top-0 right-2 absolute text-xl"></i>
+            </div>  
+        </div>
+    </div>
+</body>
+</html>
