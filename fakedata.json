@@ -1,0 +1,182 @@
+[
+    {
+        "id" : 1,
+        "name" : "Thơm mật",
+        "des" : "Thơm mật size lớn trái từ 1kg trở lên",
+        "price" : 20000,
+        "priceSale" : 20000,
+        "quantity" : 100,
+        "avatar" : "p1.jpg",
+        "imgList" : ["p1.1.jpg", "p1.2.jpg", "p1.3jpg", "p1.4.jpg", "p1.5.jpg"]
+    },
+    {
+        "id" : 2,
+        "name" : "Nho xanh",
+        "des" : "Nho xanh Ninh Thuận 500g",
+        "price" : 45000,
+        "priceSale" : 35000,
+        "quantity" : 100,
+        "avatar" : "p2.jpg",
+        "imgList" : ["p2.1.jpg", "p2.2.jpg", "p2.3jpg", "p2.4.jpg", "p2.5.jpg"]
+    },
+    {
+        "id" : 3,
+        "name" : "Red Chili",
+        "des" : "",
+        "price" : 14.99,
+        "priceSale" : 14.99,
+        "quantity" : 100,
+        "avatar" : "p4.jpg",
+        "imgList" : []
+    },
+    {
+        "id" : 4,
+        "name" : "Big Potatos",
+        "des" : "",
+        "price" : 14.99,
+        "priceSale" : 14.99,
+        "quantity" : 100,
+        "avatar" : "p5.jpg",
+        "imgList" : []
+    },
+    {
+        "id" : 5,
+        "name" : "Chanise Cabbage",
+        "des" : "",
+        "price" : 14.99,
+        "priceSale" : 14.99,
+        "quantity" : 100,
+        "avatar" : "p6.jpg",
+        "imgList" : []
+    },
+    {
+        "id" : 6,
+        "name" : "Ladies Finger",
+        "des" : "",
+        "price" : 20.99,
+        "priceSale" : 14.99,
+        "quantity" : 100,
+        "avatar" : "p7.jpg",
+        "imgList" : []
+    },
+    {
+        "id" : 7,
+        "name" : "Red Tomato",
+        "des" : "",
+        "price" : 14.99,
+        "priceSale" : 14.99,
+        "quantity" : 100,
+        "avatar" : "p8.jpg",
+        "imgList" : []
+    },
+    {
+        "id" : 8,
+        "name" : "Eggplant",
+        "des" : "",
+        "price" : 14.99,
+        "priceSale" : 14.99,
+        "quantity" : 100,
+        "avatar" : "p9.jpg",
+        "imgList" : []
+    },
+    {
+        "id" : 9,
+        "name" : "Fresh Cauliflower",
+        "des" : "",
+        "price" : 14.99,
+        "priceSale" : 14.99,
+        "quantity" : 100,
+        "avatar" : "p10.jpg",
+        "imgList" : []
+    },
+    {
+        "id" : 10,
+        "name" : "Green Apple",
+        "des" : "",
+        "price" : 14.99,
+        "priceSale" : 14.99,
+        "quantity" : 100,
+        "avatar" : "p11.jpg",
+        "imgList" : []
+    },
+    {
+        "id" : 11,
+        "name" : "Fresh Mango",
+        "des" : "",
+        "price" : 14.99,
+        "priceSale" : 14.99,
+        "quantity" : 100,
+        "avatar" : "p12.jpg",
+        "imgList" : []
+    },
+    {
+        "id" : 12,
+        "name" : "Green Capsicum",
+        "des" : "",
+        "price" : 14.99,
+        "priceSale" : 14.99,
+        "quantity" : 100,
+        "avatar" : "p13.jpg",
+        "imgList" : []
+    },
+    {
+        "id" : 13,
+        "name" : "Green Chili",
+        "des" : "",
+        "price" : 14.99,
+        "priceSale" : 14.99,
+        "quantity" : 100,
+        "avatar" : "p14.jpg",
+        "imgList" : []
+    },
+    {
+        "id" : 14,
+        "name" : "Green Cucumber",
+        "des" : "",
+        "price" : 14.99,
+        "priceSale" : 14.99,
+        "quantity" : 100,
+        "avatar" : "p15.jpg",
+        "imgList" : []
+    },
+    {
+        "id" : 15,
+        "name" : "Green Littuce",
+        "des" : "",
+        "price" : 14.99,
+        "priceSale" : 14.99,
+        "quantity" : 100,
+        "avatar" : "p16.jpg",
+        "imgList" : []
+    },
+    {
+        "id" : 16,
+        "name" : "Green Littuce",
+        "des" : "",
+        "price" : 14.99,
+        "priceSale" : 14.99,
+        "quantity" : 100,
+        "avatar" : "p17.jpg",
+        "imgList" : []
+    },
+    {
+        "id" : 17,
+        "name" : "Ladies Finger",
+        "des" : "",
+        "price" : 14.99,
+        "priceSale" : 14.99,
+        "quantity" : 100,
+        "avatar" : "p18.jpg",
+        "imgList" : []
+    },
+    {
+        "id" : 18,
+        "name" : "Green Capsicum",
+        "des" : "",
+        "price" : 14.99,
+        "priceSale" : 14.99,
+        "quantity" : 100,
+        "avatar" : "p19.jpg",
+        "imgList" : []
+    }
+]
