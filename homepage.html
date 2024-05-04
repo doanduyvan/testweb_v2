@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/aea148f8f4.js" crossorigin="anonymous"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+                width: {
+                '30%': '30%',
+              },
+              colors: {
+                    primary: '#00b208',
+                },
+                padding: {
+                    '1/2': '50%',
+                },
+
+            }
+          }
+        }
+      </script>
+      <style>
+        /* Thêm hiệu ứng chuyển động cho slideshow */
+.slideshow-image {
+    transition: opacity 0.5s ease;
+}
+
+      </style>
+</head>
+<body>
+    <div style="background-color: #EDF2EE; background-image: url(./imgs/BG\ Shepes.png); background-size:cover; background-repeat: no-repeat;" class=" w-full h-auto  px-40 py-10  ">
+        <div class="w-full h-auto bg-white  px-10  py-5">
+            <header>
+                <div class="border-b border-slate-300 pb-5 flex justify-between items-center text-sm w-full text-slate-500">
+                    <div class="flex ">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                          </svg>
+                          <p class="ml-1">Store Location: Lincoln- 344, Illinois, Chicago, USA</p>
+                    </div>
+                    <div class="flex items-center ">
+                        <p>Eng</p>
+                        <i class="fa-solid fa-angle-down mx-2"></i>
+                        <p class="ml-3">USD</p>
+                        <i class="fa-solid fa-angle-down mx-2"></i>
+                    </div>
+                </div>
+                <div class="flex justify-between h-20 items-center">
+                    <div style="background-image: url(./imgs/logo.png); background-size: contain; background-repeat: no-repeat; " class="w-44 h-10 cursor-pointer"></div>
+                    <div class="border border-slate-300 relative h-10 px-3 py-1 h-auto rounded w-96">
+                        <i class="fa-solid fa-magnifying-glass text-base mr-2"></i>
+                        <input id="searchInput" type="text" placeholder="Search" class="focus:outline-none">
+                        <button onclick="validateSearch()" style="background-color: #00b208;" class="absolute right-0 top-0 h-full px-3 text-white rounded-r">Search</button>
+                    </div>
+                    
+                    <div class="flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7 mr-2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M14.25 9.75v-4.5m0 4.5h4.5m-4.5 0 6-6m-3 18c-8.284 0-15-6.716-15-15V4.5A2.25 2.25 0 0 1 4.5 2.25h1.372c.516 0 .966.351 1.091.852l1.106 4.423c.11.44-.054.902-.417 1.173l-1.293.97a1.062 1.062 0 0 0-.38 1.21 12.035 12.035 0 0 0 7.143 7.143c.441.162.928-.004 1.21-.38l.97-1.293a1.125 1.125 0 0 1 1.173-.417l4.423 1.106c.5.125.852.575.852 1.091V19.5a2.25 2.25 0 0 1-2.25 2.25h-2.25Z" />
+                        </svg>
+                        <div>
+                            <p class="text-slate-500 text-xs">Customer Services</p>
+                            <p class="text-black ">(219) 555-0114</p>
+                        </div>
+                    </div>
+                </div>
+                <div style="background-color: #1A1A1A;" class="h-16 flex justify-between items-center text-white text-xs">
+                    <div class="flex list-none items-center">
+                        <li class="menu" ><i style="background-color: #00b208;" class="fa-solid fa-bars py-4 px-5  text-2xl cursor-pointer"></i></li>
+                        <li  style="background-color: #333333;" class="px-3  py-6 cursor-pointer icon-menu" >
+                            <span>All Categories</span> 
+                            <i class="fa-solid fa-angle-down ml-10"></i>
+                        </li>
+                        <li class="px-3  cursor-pointer">
+                            <span>Home</span> 
+                            <i class="fa-solid fa-angle-down ml-2"></i>
+                        </li>
+                        <li class="px-3  cursor-pointer hover:text-white text-slate-500">
+                            <span>Shop</span> 
+                            <i class="fa-solid fa-angle-down ml-2"></i>
+                        </li>
+                        <li class="px-3  cursor-pointer hover:text-white text-slate-500">
+                            <span>Pages</span> 
+                            <i class="fa-solid fa-angle-down ml-2"></i>
+                        </li>
+                        <li class="px-3  cursor-pointer hover:text-white text-slate-500">
+                            <span>Blog</span> 
+                            <i class="fa-solid fa-angle-down ml-2 "></i>
+                        </li>
+                        <li class="px-3  cursor-pointer hover:text-white text-slate-500">
+                            <span>About Us</span> 
+                        </li>
+                        <li class="px-3  cursor-pointer hover:text-white text-slate-500">
+                            <span>Contact Us</span> 
+                        </li>
+                    </div>
+                    <div class="flex ">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mx-2 cursor-pointer">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                          </svg>
+                          
+                        <div class="relative">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mx-2 cursor-pointer">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                              </svg>
+                            <p style="background-color: #00b208; padding: 1px 5px;" class="absolute top-0 right-0  rounded-full text-xs">2</p>     
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mx-2 cursor-pointer">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+                          </svg>
+                          
+                    </div>
+                </div>
+            </header>
+            <section>
+                <div class="flex w-full mt-5 h-auto ">
+                    <div class="list-menu border border-gray-100 w-1/4 h-auto mr-2">
+                        <li class="px-5 group hover:bg-primary w-full flex cursor-pointer items-center py-3">
+                            <i class="fa-regular fa-lemon text-gray-400 group-hover:text-white text-2xl mr-4 "></i>
+                            <p class="text-sm font-light  text-black group-hover:text-white">Fresh Fruit</p>
+                        </li>
+                        <li class="px-5 group hover:bg-primary w-full flex cursor-pointer items-center py-3">
+                            <i class="fa-solid fa-carrot text-gray-400 group-hover:text-white text-2xl mr-4 "></i>
+                            <p class="text-sm font-light  text-black group-hover:text-white">Vegetables</p>
+                        </li>
+                        <li class="px-5 group hover:bg-primary w-full flex cursor-pointer items-center py-3">
+                            <i class="fa-solid fa-fish-fins text-gray-400 group-hover:text-white text-2xl mr-4 "></i>
+                            <p class="text-sm font-light  text-black group-hover:text-white">River Fish</p>
+                        </li>
+                        <li class="px-5 group hover:bg-primary w-full flex cursor-pointer items-center py-3">
+                            <i class="fa-solid fa-drumstick-bite text-gray-400 group-hover:text-white text-2xl mr-4 "></i>
+                            <p class="text-sm font-light  text-black group-hover:text-white">Chicken & Meat</p>
+                        </li>
+                        <li class="px-5 group hover:bg-primary w-full flex cursor-pointer items-center py-3">
+                            <i class="fa-solid fa-wine-bottle text-gray-400 group-hover:text-white text-2xl mr-4 "></i>
+                            <p class="text-sm font-light  text-black group-hover:text-white">Drink & Water</p>
+                        </li>
+                        <li class="px-5 group hover:bg-primary w-full flex cursor-pointer items-center py-3">
+                            <i class="fa-solid fa-ice-cream text-gray-400 group-hover:text-white text-2xl mr-4 "></i>
+                            <p class="text-sm font-light  text-black group-hover:text-white">Yogurt & Ice Cream</p>
+                        </li>
+                        <li class="px-5 group hover:bg-primary w-full flex cursor-pointer items-center py-3">
+                            <i class="fa-solid fa-bread-slice text-gray-400 group-hover:text-white text-2xl mr-4 "></i>
+                            <p class="text-sm font-light  text-black group-hover:text-white">Cake & Bread</p>
+                        </li>
+                        <li class="px-5 group hover:bg-primary w-full flex cursor-pointer items-center py-3">
+                            <i class="fa-solid fa-cake-candles text-gray-400 group-hover:text-white text-2xl mr-4 "></i>
+                            <p class="text-sm font-light  text-black group-hover:text-white">Butter & Cream</p>
+                        </li>
+                        <li class="px-5 group hover:bg-primary w-full flex cursor-pointer items-center py-3">
+                            <i class="fa-solid fa-utensils text-gray-400 group-hover:text-white text-2xl mr-4 "></i>
+                            <p class="text-sm font-light  text-black group-hover:text-white">Cooking</p>
+                        </li>
+                        <li class="px-5 group hover:bg-primary w-full flex cursor-pointer items-center py-3 border-t border-gray-100 ">
+                            <i class="fa-solid fa-plus text-gray-400 group-hover:text-white text-2xl mr-4 "></i>
+                            <p class="text-sm font-light  text-black group-hover:text-white">View all Category</p>
+                        </li>
+                    </div>
+                    <div class="w-full h-auto relative slideshow-container">
+                        <div style="background-image: url(./imgs/Bannar.png); background-repeat: no-repeat; background-position: center; background-size: cover;" class="w-full h-full slideshow-image"></div>
+                        <div style="background-image: url(./imgs/Bannar\ Big.png); background-repeat: no-repeat; background-position: center; background-size: cover;" class="w-full h-full slideshow-image hidden"></div>
+                        <div style="background-image: url(./imgs/Hero.png); background-repeat: no-repeat; background-position: center; background-size: cover;" class="w-full h-full slideshow-image hidden"></div>
+                    
+                        <div class="absolute bottom-5 left-10 text-white text-xs z-10">
+                            <i class="fa-solid fa-circle mx-1 cursor-pointer dot"></i>
+                            <i class="fa-regular fa-circle mx-1 cursor-pointer dot"></i>
+                            <i class="fa-regular fa-circle mx-1 cursor-pointer dot"></i>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="flex justify-between border-b border-slate-100">
+                    <div class="w-1/4 py-5 group duration-300 flex items-center hover:border-b-2 hover:border-primary border-b-2 cursor-pointer border-transparent ">
+                        <i class="fa-solid fa-truck-fast bg-gray-100 px-3 py-3 mr-2 rounded-full text-2xl text-primary group-hover:text-white group-hover:bg-primary"></i>
+                        <div>
+                            <p class="text-black text-sm font-medium ">Free Shipping</p>
+                            <p class="text-gray-400 text-xs ">Free shipping with discount</p>
+                        </div>
+                    </div>
+                    <div class="w-1/4 py-5 group duration-300 flex items-center hover:border-b-2 hover:border-primary border-b-2 cursor-pointer border-transparent ">
+                        <i class="fa-solid fa-phone bg-gray-100 px-3 py-2 mr-2 rounded-full text-2xl text-primary group-hover:text-white group-hover:bg-primary"></i>
+                        <div>
+                            <p class="text-black text-sm font-medium ">Great Support 24/7</p>
+                            <p class="text-gray-400 text-xs ">Instant access to Contact </p>
+                        </div>
+                    </div>
+                    <div class="w-1/4 py-5 group duration-300 flex items-center hover:border-b-2 hover:border-primary border-b-2 cursor-pointer border-transparent ">
+                        <i class="fa-solid fa-basket-shopping bg-gray-100 px-3 py-2 mr-2 rounded-full text-2xl text-primary group-hover:text-white group-hover:bg-primary"></i>
+                        <div>
+                            <p class="text-black text-sm font-medium ">100% Sucure Payment</p>
+                            <p class="text-gray-400 text-xs ">We ensure your money is save</p>
+                        </div>
+                    </div>
+                    <div class="w-1/4 py-5 group duration-300 flex items-center hover:border-b-2 hover:border-primary border-b-2 cursor-pointer border-transparent ">
+                        <i class="fa-solid fa-box-archive bg-gray-100 px-3 py-2 mr-2 rounded-full text-2xl text-primary group-hover:text-white group-hover:bg-primary"></i>
+                        <div>
+                            <p class="text-black text-sm font-medium ">Money-Back Guarantee</p>
+                            <p class="text-gray-400 text-xs ">30 days money-back</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="flex justify-between h-96 my-10 ">
+                    <div style="background-image: url(./imgs/Rectangle\ 54.png); background-position: center;" class="w-30%  flex flex-col items-center rounded-lg p-5">
+                        <p class="text-center uppercase text-xs text-white">Best Deals</p>
+                        <h1 class="text-3xl text-center font-semibold text-white my-5">Sale of the Month</h1>
+                        <div class="">
+                            <div class="flex text-xl text-white justify-between w-44">
+                                <p>00</p>
+                                <p class="text-gray-300">:</p>
+                                <p>02</p>
+                                <p class="text-gray-300">:</p>
+                                <p>18</p>
+                                <p class="text-gray-300">:</p>
+                                <p>46</p>
+                            </div>
+                            <div class="flex text-sm text-gray-300 justify-between ">
+                                <p>Days</p>
+                                <p>Hours</p>
+                                <p>Mins</p>
+                                <p>Secs</p>
+                            </div>
+                        </div>
+                        <div class="flex text-primary bg-white py-2 px-3 rounded-full  items-center my-2">
+                            <p class="text-sm font-medium mx-2">Shop Now</p>
+                            <i class="fa-solid fa-arrow-right-long "></i>
+                        </div>
+                    </div>
+                    <div style="background-image: url(./imgs/Bản\ sao\ Rectangle\ 54.png); background-position: center;" class="w-30%  flex flex-col items-center rounded-lg p-5">
+                        <p class="text-center uppercase text-xs text-white">85% Fat Free</p>
+                        <h1 class="text-3xl text-center font-semibold text-white my-5">Low-Fat Meat</h1>
+                        <div class="flex mb-5">
+                            <p class="text-white">Started at</p>
+                            <p class="text-orange-400 font-medium mx-1">$79.99</p>
+                        </div>
+                        <div class="flex text-primary bg-white py-2 px-3 rounded-full  items-center my-2">
+                            <p class="text-sm font-medium mx-2">Shop Now</p>
+                            <i class="fa-solid fa-arrow-right-long "></i>
+                        </div>
+                    </div>
+                    <div style="background-image: url(./imgs/Rectangle\ 54\ \(1\).png); background-position: center;" class="w-30%  flex flex-col items-center rounded-lg p-5">
+                        <p class="text-center uppercase text-xs text-black">Summer Sale</p>
+                        <h1 class="text-3xl text-center font-semibold text-black my-5">100% Fresh Fruit</h1>
+                        <div class="flex mb-5 items-center">
+                            <p class="text-black">Up to</p>
+                            <p style="color: #fdca00;" class="  font-medium mx-1 py-1 rounded text-sm bg-black ">64% OFF</p>
+                        </div>
+                        <div class="flex text-primary bg-white py-2 px-3 rounded-full  items-center my-2">
+                            <p class="text-sm font-medium mx-2">Shop Now</p>
+                            <i class="fa-solid fa-arrow-right-long "></i>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="py-10">
+                    <p style="color: #00b208;" class="text-xs text-center">CATEGORY</p>
+                    <p class="text-3xl text-black font-semibold text-center mt-3">Shop by Top Categories</p>
+                    <div class="flex mt-10 mb-5">
+                        <div class="w-1/6 px-2 h-auto group duration-300 ">
+                            <div class="w-full p-2  h-full flex flex-col items-center justify-center border border-gray-100 shadow-sm  group-hover:border-primary  cursor-pointer">
+                                <img class="w-full" src="./imgs/image 1.png" alt="">
+                                <p class="text-base font-medium mt-5 group-hover:text-primary ">Fresh Fruit</p>
+                            </div>  
+                        </div>
+                        <div class="w-1/6 px-2 h-auto group duration-300">
+                            <div class="w-full p-2 h-full flex flex-col items-center justify-center border border-gray-100 shadow-sm  group-hover:border-primary  cursor-pointer">
+                                <img class="w-full" src="./imgs/image 1 (1).png" alt="">
+                                <p class="text-base font-medium mt-5 group-hover:text-primary ">Fresh Vegetables</p>
+                            </div>  
+                        </div>
+                        <div class="w-1/6 px-2 h-auto group duration-300">
+                            <div class="w-full p-2 h-full flex flex-col items-center justify-center border border-gray-100 shadow-sm  group-hover:border-primary  cursor-pointer">
+                                <img class="w-full" src="./imgs/image 1 (2).png" alt="">
+                                <p class="text-base font-medium mt-5 group-hover:text-primary ">Meat & Fish</p>
+                            </div>  
+                        </div>
+                        <div class="w-1/6 px-2 h-auto group duration-300">
+                            <div class="w-full p-2 h-full flex flex-col items-center justify-center border border-gray-100 shadow-sm  group-hover:border-primary  cursor-pointer">
+                                <img class="w-full" src="./imgs/image 1 (3).png" alt="">
+                                <p class="text-base font-medium mt-5 group-hover:text-primary ">Snacks</p>
+                            </div>  
+                        </div>
+                        <div class="w-1/6 px-2 h-auto group duration-300">
+                            <div class="w-full p-2 h-full flex flex-col items-center justify-center border border-gray-100 shadow-sm  group-hover:border-primary  cursor-pointer">
+                                <img class="w-full" src="./imgs/image 1 (4).png" alt="">
+                                <p class="text-base font-medium mt-5 group-hover:text-primary ">Beverages</p>
+                            </div>  
+                        </div>
+                        <div class="w-1/6 px-2 h-auto group duration-300">
+                            <div class="w-full p-2 h-full flex flex-col items-center justify-center border border-gray-100 shadow-sm  group-hover:border-primary  cursor-pointer">
+                                <img class="w-full" src="./imgs/image 1 (5).png" alt="">
+                                <p class="text-base font-medium mt-5 group-hover:text-primary ">Beauty & Health</p>
+                            </div>  
+                        </div>
+                    </div>
+                    <div class="flex mb-10">
+                        <div class="w-1/6 px-2 h-auto group duration-300">
+                            <div class="w-full p-2 h-full flex flex-col items-center justify-center border border-gray-100 shadow-sm  group-hover:border-primary  cursor-pointer">
+                                <img class="w-full" src="./imgs/image 1 (6).png" alt="">
+                                <p class="text-base font-medium mt-5 group-hover:text-primary ">Bread & Bakery</p>
+                            </div>  
+                        </div>
+                        <div class="w-1/6 px-2 h-auto group duration-300">
+                            <div class="w-full p-2 h-full flex flex-col items-center justify-center border border-gray-100 shadow-sm  group-hover:border-primary  cursor-pointer">
+                                <img class="w-full" src="./imgs/image 1 (7).png" alt="">
+                                <p class="text-base font-medium mt-5 group-hover:text-primary ">Baking Needs</p>
+                            </div>  
+                        </div>
+                        <div class="w-1/6 px-2 h-auto group duration-300">
+                            <div class="w-full p-2 h-full flex flex-col items-center justify-center border border-gray-100 shadow-sm  group-hover:border-primary  cursor-pointer">
+                                <img class="w-full" src="./imgs/image 1 (8).png" alt="">
+                                <p class="text-base font-medium mt-5 group-hover:text-primary ">Cooking</p>
+                            </div>  
+                        </div>
+                        <div class="w-1/6 px-2 h-auto group duration-300">
+                            <div class="w-full p-2 h-full flex flex-col items-center justify-center border border-gray-100 shadow-sm  group-hover:border-primary  cursor-pointer">
+                                <img class="w-full" src="./imgs/image 1 (9).png" alt="">
+                                <p class="text-base font-medium mt-5 group-hover:text-primary ">Diabetic Food</p>
+                            </div>  
+                        </div>
+                        <div class="w-1/6 px-2 h-auto group duration-300">
+                            <div class="w-full p-2 h-full flex flex-col items-center justify-center border border-gray-100 shadow-sm  group-hover:border-primary  cursor-pointer">
+                                <img class="w-full" src="./imgs/image 1 (10).png" alt="">
+                                <p class="text-base font-medium mt-5 group-hover:text-primary ">Dish Detergents</p>
+                            </div>  
+                        </div>
+                        <div class="w-1/6 px-2 h-auto group duration-300">
+                            <div class="w-full p-2 h-full flex flex-col items-center justify-center border border-gray-100 shadow-sm  group-hover:border-primary  cursor-pointer">
+                                <img class="w-full" src="./imgs/image 1 (11).png" alt="">
+                                <p class="text-base font-medium mt-5 group-hover:text-primary ">Oil</p>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div id="video" class="w-full flex flex-col items-center justify-center h-80" style="background-image: url(./imgs/Rectangle\ 55.png);">
+                    <p class="text-white font-semibold text-3xl  w-80  text-center mb-10">We’re the Best Organic Farm in the World</p>
+                    <i id="playButton" class="fa-solid fa-play w-12 h-12 rounded-full border border-white text-white text-2xl text-center pt-2 pl-1 cursor-pointer" ></i>
+                </div>
+                <div id="videoContainer" class="w-full flex flex-col items-center justify-center h-80" style="display: none;">
+                    <iframe id="videoPlayer" class="w-full h-80" src="https://www.youtube.com/embed/a_0AgvcCQ20?si=wuvAl7Q17Mk3SDKi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                
+            </section>
+            <section>
+                <div class="my-10">
+                    <p style="color: #00b208;" class="text-center font-medium text-sm">TEAM</p>
+                    <p class="text-3xl font-semibold text-center my-5 ">Our Professional Members</p>
+                    <div class="flex mt-5 justify-between items-center">
+                        <div class="w-1/5  shadow-2xl">
+                            <div class="relative group duration-300 border">
+                                <img class="w-full  group-hover:blur-sm duration-300" src="./imgs/Bản sao Image 3.png" alt="">
+                                <div class=" flex items-center text-sm text-white absolute top-1/2 right-1/2 translate-x-1/2 hidden group-hover:flex ">
+                                    <i class="w-7 h-7 mx-1 fa-brands fa-facebook-f text-white rounded-full text-center leading-7 cursor-pointer hover:bg-primary duration-300"></i>
+                                    <i class="w-7 h-7 mx-1 fa-brands fa-twitter text-center leading-7 cursor-pointer hover:bg-primary duration-300 rounded-full"></i>
+                                    <i class="w-7 h-7 mx-1 fa-brands fa-pinterest-p text-center leading-7 cursor-pointer hover:bg-primary duration-300 rounded-full"></i>
+                                    <i class="w-7 h-7 mx-1 fa-brands fa-instagram text-center leading-7 cursor-pointer hover:bg-primary duration-300 rounded-full"></i>
+                                </div>
+                            </div>
+                            <div class="border-b border-r border-l border-slate-200 p-3">
+                                <p class="text-black font-medium text-sm">Jenny Wilson</p>
+                                 <p class="text-xs text-gray-500">Ceo & Founder</p>
+                            </div>
+                        </div>
+                        <div class="w-1/5  shadow-2xl">
+                            <div class="relative group duration-300 border ">
+                                <img class="w-full  group-hover:blur-sm duration-300" src="./imgs/Bản sao Image (1).png" alt="">
+                                <div class=" flex items-center text-sm text-white absolute top-1/2 right-1/2 translate-x-1/2 hidden group-hover:flex ">
+                                    <i class="w-7 h-7 mx-1 fa-brands fa-facebook-f text-white rounded-full text-center leading-7 cursor-pointer hover:bg-primary duration-300"></i>
+                                    <i class="w-7 h-7 mx-1 fa-brands fa-twitter text-center leading-7 cursor-pointer hover:bg-primary duration-300 rounded-full"></i>
+                                    <i class="w-7 h-7 mx-1 fa-brands fa-pinterest-p text-center leading-7 cursor-pointer hover:bg-primary duration-300 rounded-full"></i>
+                                    <i class="w-7 h-7 mx-1 fa-brands fa-instagram text-center leading-7 cursor-pointer hover:bg-primary duration-300 rounded-full"></i>
+                                </div>
+                            </div>
+                            <div class="border-b border-r border-l border-slate-200 p-3">
+                                <p class="text-black font-medium text-sm">Jane Cooper</p>
+                                 <p class="text-xs text-gray-500">Worker</p>
+                            </div>
+                        </div>
+                        <div class="w-1/5  shadow-2xl">
+                            <div class="relative group duration-300 border">
+                                <img class="w-full  group-hover:blur-sm duration-300" src="./imgs/Image (2).png" alt="">
+                                <div class=" flex items-center text-sm text-white absolute top-1/2 right-1/2 translate-x-1/2 hidden group-hover:flex ">
+                                    <i class="w-7 h-7 mx-1 fa-brands fa-facebook-f text-white rounded-full text-center leading-7 cursor-pointer hover:bg-primary duration-300"></i>
+                                    <i class="w-7 h-7 mx-1 fa-brands fa-twitter text-center leading-7 cursor-pointer hover:bg-primary duration-300 rounded-full"></i>
+                                    <i class="w-7 h-7 mx-1 fa-brands fa-pinterest-p text-center leading-7 cursor-pointer hover:bg-primary duration-300 rounded-full"></i>
+                                    <i class="w-7 h-7 mx-1 fa-brands fa-instagram text-center leading-7 cursor-pointer hover:bg-primary duration-300 rounded-full"></i>
+                                </div>
+                            </div>
+                            <div class="border-b border-r border-l border-slate-200 p-3">
+                                <p class="text-black font-medium text-sm">Cody Fisher</p>
+                                 <p class="text-xs text-gray-500">Security Guard</p>
+                            </div>
+                        </div>
+                        <div class="w-1/5  shadow-2xl">
+                            <div class="relative group duration-300 border">
+                                <img class="w-full  group-hover:blur-sm duration-300" src="./imgs/Image (3).png" alt="">
+                                <div class=" flex items-center text-sm text-white absolute top-1/2 right-1/2 translate-x-1/2 hidden group-hover:flex ">
+                                    <i class="w-7 h-7 mx-1 fa-brands fa-facebook-f text-white rounded-full text-center leading-7 cursor-pointer hover:bg-primary duration-300"></i>
+                                    <i class="w-7 h-7 mx-1 fa-brands fa-twitter text-center leading-7 cursor-pointer hover:bg-primary duration-300 rounded-full"></i>
+                                    <i class="w-7 h-7 mx-1 fa-brands fa-pinterest-p text-center leading-7 cursor-pointer hover:bg-primary duration-300 rounded-full"></i>
+                                    <i class="w-7 h-7 mx-1 fa-brands fa-instagram text-center leading-7 cursor-pointer hover:bg-primary duration-300 rounded-full"></i>
+                                </div>
+                            </div>
+                            <div class="border-b border-r border-l border-slate-200 p-3">
+                                <p class="text-black font-medium text-sm">Robert Fox</p>
+                                 <p class="text-xs text-gray-500">Senior Farmer Manager</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div style="background-color: #f2f2f2;" class="p-10">
+                    <p style="color: #00b208;" class="text-center font-medium ">Client Testiomial</p>
+                    <p class="text-center text-4xl font-semibold my-5">What our Client Says</p>
+                    <div class="flex  justify-around mt-10">
+                        <div class="w-30% p-5 bg-white">
+                            <img class="w-8" src="./imgs/Bản sao Vector.png" alt="">
+                            <p class="text-gray-700 text-sm my-4">Pellentesque eu nibh eget mauris congue mattis mattis nec tellus. Phasellus imperdiet elit eu magna dictum, bibendum cursus velit sodales. Donec sed neque eget</p>
+                            <div class="flex justify-between items-center">
+                                <div class="flex">
+                                    <img class="w-10 mr-3" src="./imgs/Bản sao Image.png" alt="">
+                                    <div class="text-sm">
+                                        <p class="text-black font-medium ">Robert Fox</p>
+                                        <p class="text-slate-400">Customer</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <i style="color: #FFA432;" class="fa-solid fa-star text-xs"></i>
+                                    <i style="color: #FFA432;" class="fa-solid fa-star text-xs"></i>
+                                    <i style="color: #FFA432;" class="fa-solid fa-star text-xs"></i>
+                                    <i style="color: #FFA432;" class="fa-solid fa-star text-xs"></i>
+                                    <i style="color: #FFA432;" class="fa-solid fa-star text-xs"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-30% p-5 bg-white">
+                            <img class="w-8" src="./imgs/Bản sao Vector.png" alt="">
+                            <p class="text-gray-700 text-sm my-4">Pellentesque eu nibh eget mauris congue mattis mattis nec tellus. Phasellus imperdiet elit eu magna dictum, bibendum cursus velit sodales. Donec sed neque eget</p>
+                            <div class="flex justify-between items-center">
+                                <div class="flex">
+                                    <img class="w-10 mr-3" src="./imgs/Image (1).png" alt="">
+                                    <div class="text-sm">
+                                        <p class="text-black font-medium ">Dianne Russell</p>
+                                        <p class="text-slate-400">Customer</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <i style="color: #FFA432;" class="fa-solid fa-star text-xs"></i>
+                                    <i style="color: #FFA432;" class="fa-solid fa-star text-xs"></i>
+                                    <i style="color: #FFA432;" class="fa-solid fa-star text-xs"></i>
+                                    <i style="color: #FFA432;" class="fa-solid fa-star text-xs"></i>
+                                    <i style="color: #FFA432;" class="fa-solid fa-star text-xs"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-30% p-5 bg-white">
+                            <img class="w-8" src="./imgs/Bản sao Vector.png" alt="">
+                            <p class="text-gray-700 text-sm my-4">Pellentesque eu nibh eget mauris congue mattis mattis nec tellus. Phasellus imperdiet elit eu magna dictum, bibendum cursus velit sodales. Donec sed neque eget</p>
+                            <div class="flex justify-between items-center">
+                                <div class="flex">
+                                    <img class="w-10 mr-3" src="./imgs/Bản sao Image 2.png" alt="">
+                                    <div class="text-sm">
+                                        <p class="text-black font-medium ">Eleanor Pena</p>
+                                        <p class="text-slate-400">Customer</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <i style="color: #FFA432;" class="fa-solid fa-star text-xs"></i>
+                                    <i style="color: #FFA432;" class="fa-solid fa-star text-xs"></i>
+                                    <i style="color: #FFA432;" class="fa-solid fa-star text-xs"></i>
+                                    <i style="color: #FFA432;" class="fa-solid fa-star text-xs"></i>
+                                    <i style="color: #FFA432;" class="fa-solid fa-star text-xs"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="h-36 border border-slate-300 flex items-center my-10">
+                    <div class="w-1/6 border-r border-slate-300 flex justify-center">
+                        <img class="w-14 h-5" src="./imgs/Vector.png" alt="">
+                    </div>
+                    <div class="w-1/6 border-r border-slate-300 flex justify-center">
+                        <img class="w-14 h-5 hover:text-primary" src="./imgs/mango-1.png" alt="">
+                    </div>
+                    <div class="w-1/6 border-r border-slate-300 flex justify-center">
+                        <img class="w-14 h-5" src="./imgs/Group.png" alt="">
+                    </div>
+                    <div class="w-1/6 border-r border-slate-300 flex justify-center">
+                        <img class="w-14 h-5" src="./imgs/food.png" alt="">
+                    </div>
+                    <div class="w-1/6 border-r border-slate-300 flex justify-center">
+                        <img class="w-14 h-5" src="./imgs/bookoff-corporation-logo.png" alt="">
+                    </div>
+                    <div class="w-1/6 border-r border-slate-300 flex justify-center">
+                        <img class="w-14 h-5" src="./imgs/Group (1).png" alt="">
+                    </div>
+                </div>
+            </section>
+            <footer>
+                <div style="background-color: #1A1A1A;" class="flex  justify-between   px-10 py-10 ">
+                    <div class="flex items-center">
+                        <i style="color: #00b208;" class="fa-regular fa-envelope-open text-3xl mx-2 "></i>
+                        <div>
+                            <p class="text-white text-base ">Subcribe our Newsletter</p>
+                            <p class="text-xs text-gray-600">Pellentesque eu nibh eget mauris congue mattis matti.</p>
+                        </div>
+                    </div>
+                    <div class="px-3 flex relative w-96 items-center">
+                        <input id="emailInput" class="text-sm px-5 py-2 rounded-full w-full h-full text-white" style="background-color: #333333;" type="email" placeholder="Your email address">
+                        <div onclick="validateEmail()" style="background-color: #00b208;" class="text-white text-sm px-5 py-2 absolute top-0 right-0 h-full rounded-full mr-3">Subscribe</div>
+                    </div>
+                    
+                    <div class="flex text-gray-600 text-sm items-center duration-300">
+                        <i class="w-7 h-7 mx-1 fa-brands fa-facebook-f  rounded-full text-center leading-7 cursor-pointer hover:bg-primary hover:text-white"></i>
+                        <i class="w-7 h-7 mx-1 fa-brands fa-twitter text-center leading-7 cursor-pointer hover:bg-primary hover:text-white rounded-full"></i>
+                        <i class="w-7 h-7 mx-1 fa-brands fa-pinterest-p text-center leading-7 cursor-pointer hover:bg-primary hover:text-white rounded-full"></i>
+                        <i class="w-7 h-7 mx-1 fa-brands fa-instagram text-center leading-7 cursor-pointer hover:bg-primary hover:text-white rounded-full"></i>
+                    </div>
+                </div>
+                <div style="background-color: #f2f2f2;" class="py-9 px-9   flex max-md:flex-col justify-between max-md:px-10 max-md:py-10 py-16 px-20 text-gray-600">
+                        <div class="basis-4/12 max-md:w-full leading-8 max-md:my-5 pr-10">
+                            
+                           <img class="w-48" src="./imgs/logo-removebg-preview.png" alt="">
+                           <p class="text-xs text-gray-500">Morbi cursus porttitor enim lobortis molestie. Duis gravida turpis dui, eget bibendum magna congue nec.</p>
+                           <div class="flex text-sm mt-6">
+                            <p class="text-black font-medium border-b-2 border-green-500 pb-2">(219) 555-0114</p>
+                            <p class="text-grat-500 text-xs mx-3">or</p>
+                            <p class="text-black font-medium border-b-2 border-green-500 pb-2">Proxy@gmail.com</p>
+                           </div>
+                        </div>
+                        <div class="flex basis-5/12 ">
+                            <div class="w-1/3 max-md:w-full list-none leading-8 max-md:my-5">
+                                <li class="font-medium text-black ">My Account</li>
+                                <li class="text-gray-600 font-light text-sm my-1">My Account</li>
+                                <li class="text-gray-600 font-light text-sm  my-1">Order History</li>
+                                <li class="text-gray-600 font-light text-sm  my-1">Shoping Cart</li>
+                                <li class="text-gray-600 font-light text-sm  my-1">Wishlist</li>
+                            </div>
+                            <div class="w-1/3 max-md:w-full list-none leading-8 max-md:my-5">
+                                <li class="font-medium text-black">Helps</li>
+                                <li class="text-gray-600 font-light text-sm  my-1">Contact </li>
+                                <li class="text-gray-600 font-light text-sm  my-1">FAQs</li>
+                                <li class="text-gray-600 font-light text-sm  my-1">Terms and conditions</li>
+                                <li class="text-gray-600 font-light text-sm  my-1">Privacy policy</li>
+                            </div>
+                            <div class="w-1/3 max-md:w-full list-none leading-8 max-md:my-5">
+                                <li class="font-medium text-black">Proxy</li>
+                                <li class="text-gray-600 font-light text-sm  my-1">About</li>
+                                <li class="text-gray-600 font-light text-sm  my-1">Shop</li>
+                                <li class="text-gray-600 font-light text-sm  my-1">Product</li>
+                                <li class="text-gray-600 font-light text-sm  my-1">Track Order</li>
+                            </div>
+                        </div>
+                        <div class="basis-3/12 max-md:w-full  list-none leading-8 max-md:my-5">
+                            <li class="font-medium text-black mb-1">Download Mobile App</li>
+                            <li>
+                                <div class="flex mb-1 ">
+                                    <img class="w-22 h-11 mr-1" src="./imgs/App Store.png" alt="">
+                                    <img class="w-22 h-11 " src="./imgs/Google Play.png" alt="">
+                                </div>
+                            </li>
+                        </div>
+                </div>
+                <div class="flex justify-between items-center max-md:px-10  pt-6 "  >
+                    <div class="text-slate-400 text-sm	max-md:text-xs">Ecobazar eCommerce © 2021. All Rights Reserved</div>
+                    <div class="flex text-white max-md:text-xs">
+                        <div  class="mx-1 w-9  max-md:w-5 max-md:h-5  flex items-center justify-center rounded-full "><img src="./imgs/Method=ApplePay.png" alt=""></div>
+                        <div  class="mx-1 w-9  max-md:w-5 max-md:h-5  flex items-center justify-center rounded-full "><img src="./imgs/Method=Discover.png" alt=""></div>
+                        <div  class="mx-1 w-9  max-md:w-5 max-md:h-5  flex items-center justify-center rounded-full "> <img src="./imgs/Method=Mastercard.png" alt=""></div>
+                        <div  class="mx-1  w-9  max-md:w-5 max-md:h-5 flex items-center justify-center rounded-full "><img src="./imgs/Method=Visa.png" alt=""></div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script>
+        // Lắng nghe sự kiện click vào biểu tượng play
+        document.getElementById('playButton').addEventListener('click', function() {
+            // Ẩn đi phần tử chứa hình ảnh
+            document.getElementById('video').style.display = 'none';
+            // Hiển thị phần tử chứa video
+            document.getElementById('videoContainer').style.display = 'block';
+            // Chạy video
+            document.getElementById('videoPlayer').play();
+        });
+    </script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+  $(document).ready(function(){
+      var slides = $('.slideshow-image');
+      var dots = $('.dot');
+      var currentSlide = 0;
+  
+      showSlide(currentSlide);
+  
+      var slideInterval = setInterval(nextSlide, 3000); // Tự động chuyển slide sau mỗi 3 giây
+  
+      dots.click(function() {
+          var dotIndex = $(this).index();
+          showSlide(dotIndex);
+      });
+  
+      function showSlide(index) {
+          slides.addClass('hidden');
+          $(slides[index]).removeClass('hidden');
+          currentSlide = index;
+          updateDots();
+      }
+  
+      function nextSlide() {
+          currentSlide = (currentSlide + 1) % slides.length;
+          showSlide(currentSlide);
+      }
+  
+      function updateDots() {
+          dots.removeClass('active');
+          dots.removeClass('fa-solid');
+          dots.addClass('fa-regular');
+          $(dots[currentSlide]).addClass('active');
+          $(dots[currentSlide]).removeClass('fa-regular');
+          $(dots[currentSlide]).addClass('fa-solid');
+      }
+  });
+  </script>
+  <script>
+    function validateSearch() {
+        var input = document.getElementById("searchInput").value.trim();
+    
+        if (input === "") {
+            alert("Please enter a search term.");
+            return;
+        } else {
+            alert("Không có dữ liệu.");
+            document.getElementById("searchInput").value = "";
+        }
+    }
+    function validateEmail() {
+    var email = document.getElementById("emailInput").value.trim();
+    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (email === "") {
+        alert("Please enter your email address.");
+        return;
+    }
+
+    if (!emailRegex.test(email)) {
+        alert("Please enter a valid email address.");
+        return;
+    } else {
+        alert("Thank you for subscribing!");
+        document.getElementById("emailInput").value = "";
+    } 
+    }
+
+
+    const Menu = document.querySelector(".menu");
+    const IconMenu = document.querySelector(".icon-menu");
+    const ListMenu = document.querySelector(".list-menu");
+    const images = document.querySelectorAll(".slideshow-image");
+    
+    Menu.addEventListener("click", function() {
+      IconMenu.classList.toggle("hidden");
+      ListMenu.classList.toggle("hidden");
+      
+      images.forEach(function(image) {
+    if (image.classList.contains("pt-1/2")) {
+      image.classList.remove("pt-1/2");
+      image.classList.add("h-full");
+    } else {
+      image.classList.remove("h-full");
+      image.classList.add("pt-1/2");
+    }
+  });
+    });
+    
+    </script>
+    
+  
+   
+</body>
+</html>
