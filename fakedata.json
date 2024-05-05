@@ -26,7 +26,7 @@
         "price" : 14.99,
         "priceSale" : 14.99,
         "quantity" : 100,
-        "avatar" : "p4.jpg",
+        "avatar" : "p4.png",
         "imgList" : []
     },
     {
@@ -36,7 +36,7 @@
         "price" : 14.99,
         "priceSale" : 14.99,
         "quantity" : 100,
-        "avatar" : "p5.jpg",
+        "avatar" : "p5.png",
         "imgList" : []
     },
     {
@@ -46,7 +46,7 @@
         "price" : 14.99,
         "priceSale" : 14.99,
         "quantity" : 100,
-        "avatar" : "p6.jpg",
+        "avatar" : "p6.png",
         "imgList" : []
     },
     {
@@ -56,7 +56,7 @@
         "price" : 20.99,
         "priceSale" : 14.99,
         "quantity" : 100,
-        "avatar" : "p7.jpg",
+        "avatar" : "p7.png",
         "imgList" : []
     },
     {
@@ -66,7 +66,7 @@
         "price" : 14.99,
         "priceSale" : 14.99,
         "quantity" : 100,
-        "avatar" : "p8.jpg",
+        "avatar" : "p8.png",
         "imgList" : []
     },
     {
@@ -76,7 +76,7 @@
         "price" : 14.99,
         "priceSale" : 14.99,
         "quantity" : 100,
-        "avatar" : "p9.jpg",
+        "avatar" : "p9.png",
         "imgList" : []
     },
     {
@@ -86,7 +86,7 @@
         "price" : 14.99,
         "priceSale" : 14.99,
         "quantity" : 100,
-        "avatar" : "p10.jpg",
+        "avatar" : "p10.png",
         "imgList" : []
     },
     {
@@ -96,7 +96,7 @@
         "price" : 14.99,
         "priceSale" : 14.99,
         "quantity" : 100,
-        "avatar" : "p11.jpg",
+        "avatar" : "p11.png",
         "imgList" : []
     },
     {
@@ -106,7 +106,7 @@
         "price" : 14.99,
         "priceSale" : 14.99,
         "quantity" : 100,
-        "avatar" : "p12.jpg",
+        "avatar" : "p12.png",
         "imgList" : []
     },
     {
@@ -116,7 +116,7 @@
         "price" : 14.99,
         "priceSale" : 14.99,
         "quantity" : 100,
-        "avatar" : "p13.jpg",
+        "avatar" : "p13.png",
         "imgList" : []
     },
     {
@@ -126,7 +126,7 @@
         "price" : 14.99,
         "priceSale" : 14.99,
         "quantity" : 100,
-        "avatar" : "p14.jpg",
+        "avatar" : "p14.png",
         "imgList" : []
     },
     {
@@ -136,7 +136,7 @@
         "price" : 14.99,
         "priceSale" : 14.99,
         "quantity" : 100,
-        "avatar" : "p15.jpg",
+        "avatar" : "p15.png",
         "imgList" : []
     },
     {
@@ -146,7 +146,7 @@
         "price" : 14.99,
         "priceSale" : 14.99,
         "quantity" : 100,
-        "avatar" : "p16.jpg",
+        "avatar" : "p16.png",
         "imgList" : []
     },
     {
@@ -156,7 +156,7 @@
         "price" : 14.99,
         "priceSale" : 14.99,
         "quantity" : 100,
-        "avatar" : "p17.jpg",
+        "avatar" : "p17.png",
         "imgList" : []
     },
     {
@@ -166,7 +166,7 @@
         "price" : 14.99,
         "priceSale" : 14.99,
         "quantity" : 100,
-        "avatar" : "p18.jpg",
+        "avatar" : "p18.png",
         "imgList" : []
     },
     {
@@ -176,7 +176,7 @@
         "price" : 14.99,
         "priceSale" : 14.99,
         "quantity" : 100,
-        "avatar" : "p19.jpg",
+        "avatar" : "p19.png",
         "imgList" : []
     }
 ]
